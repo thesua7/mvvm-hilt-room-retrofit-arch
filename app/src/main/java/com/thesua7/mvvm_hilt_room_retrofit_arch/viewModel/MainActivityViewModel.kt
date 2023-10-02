@@ -17,4 +17,7 @@ class MainActivityViewModel @Inject constructor(private val roomRepository:RoomR
     fun makeApiCall(){
         roomRepository.makeApiCall()
     }
+    fun makeUserCall(token:String,map:HashMap<String,String>){
+        roomRepository.makeApiCallForUser(token,map)
+    }
 }

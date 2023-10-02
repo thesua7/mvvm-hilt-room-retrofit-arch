@@ -31,6 +31,12 @@ class MainActivity : AppCompatActivity() {
 
         })
         viewModel.makeApiCall()
+        val map:HashMap<String,String> = HashMap<String,String>()
+        map.put("first_name","xxxx")
+        map.put("last_name","xxxx")
+        map.put("location","xxxx")
+
+        viewModel.makeUserCall("Bearer 20|EM0NV9C5H2lbWmQmnFCj99yWi3ySQHCzgQHGtefK",map)
 
     }
 
